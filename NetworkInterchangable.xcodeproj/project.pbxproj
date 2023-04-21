@@ -14,6 +14,7 @@
 		EC43E3CE29F18D9300B49A49 /* User.swift in Sources */ = {isa = PBXBuildFile; fileRef = EC43E3CD29F18D9300B49A49 /* User.swift */; };
 		EC492DA529F27745009B4375 /* Networking.swift in Sources */ = {isa = PBXBuildFile; fileRef = EC492DA429F27745009B4375 /* Networking.swift */; };
 		EC492DA929F2815B009B4375 /* UserViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = EC492DA829F2815B009B4375 /* UserViewModel.swift */; };
+		EC492DAC29F283A1009B4375 /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = EC492DAB29F283A1009B4375 /* Constants.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -25,6 +26,7 @@
 		EC43E3CD29F18D9300B49A49 /* User.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = User.swift; sourceTree = "<group>"; };
 		EC492DA429F27745009B4375 /* Networking.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Networking.swift; sourceTree = "<group>"; };
 		EC492DA829F2815B009B4375 /* UserViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserViewModel.swift; sourceTree = "<group>"; };
+		EC492DAB29F283A1009B4375 /* Constants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -57,6 +59,7 @@
 		EC43E3BD29F18D6900B49A49 /* NetworkInterchangable */ = {
 			isa = PBXGroup;
 			children = (
+				EC492DAA29F28397009B4375 /* Constants */,
 				EC492DA729F27753009B4375 /* ViewModel */,
 				EC492DA629F27748009B4375 /* View */,
 				EC492DA329F276E0009B4375 /* Service */,
@@ -106,6 +109,14 @@
 				EC492DA829F2815B009B4375 /* UserViewModel.swift */,
 			);
 			path = ViewModel;
+			sourceTree = "<group>";
+		};
+		EC492DAA29F28397009B4375 /* Constants */ = {
+			isa = PBXGroup;
+			children = (
+				EC492DAB29F283A1009B4375 /* Constants.swift */,
+			);
+			path = Constants;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -183,6 +194,7 @@
 				EC43E3CE29F18D9300B49A49 /* User.swift in Sources */,
 				EC492DA929F2815B009B4375 /* UserViewModel.swift in Sources */,
 				EC492DA529F27745009B4375 /* Networking.swift in Sources */,
+				EC492DAC29F283A1009B4375 /* Constants.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

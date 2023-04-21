@@ -8,14 +8,33 @@
 import SwiftUI
 
 struct ContentView: View {
+    
+    @ObservedObject private var userListViewModel = UserListViewModel()
+    
+    init() {
+        self.userListViewModel = UserListViewModel()
+    }
+    
     var body: some View {
-        VStack {
-            Image(systemName: "globe")
-                .imageScale(.large)
-                .foregroundColor(.accentColor)
-            Text("Hello, world!")
+        List(userListViewModel.userList, id: \.id) {user in
+            VStack {
+                Text(user.name)
+                    .font(.title3)
+                    .foregroundColor(.blue)
+                    .frame(maxWidth: .infinity, alignment: .leading)
+                Text(user.username)
+                    .font(.title2)
+                    .foregroundColor(.green)
+                    .frame(maxWidth: .infinity, alignment: .leading)
+                Text(user.email)
+                    .font(.title2)
+                    .foregroundColor(.brown)
+                    .frame(maxWidth: .infinity, alignment: .leading)
+                    
+            }
+        }.task {
+            await userListViewModel.downloadUsers()
         }
-        .padding()
     }
 }
 
