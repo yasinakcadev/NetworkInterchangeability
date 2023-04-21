@@ -12,9 +12,11 @@
 		EC43E3C329F18D6C00B49A49 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = EC43E3C229F18D6C00B49A49 /* Assets.xcassets */; };
 		EC43E3C629F18D6C00B49A49 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = EC43E3C529F18D6C00B49A49 /* Preview Assets.xcassets */; };
 		EC43E3CE29F18D9300B49A49 /* User.swift in Sources */ = {isa = PBXBuildFile; fileRef = EC43E3CD29F18D9300B49A49 /* User.swift */; };
-		EC492DA529F27745009B4375 /* Networking.swift in Sources */ = {isa = PBXBuildFile; fileRef = EC492DA429F27745009B4375 /* Networking.swift */; };
+		EC492DA529F27745009B4375 /* Webservice.swift in Sources */ = {isa = PBXBuildFile; fileRef = EC492DA429F27745009B4375 /* Webservice.swift */; };
 		EC492DA929F2815B009B4375 /* UserViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = EC492DA829F2815B009B4375 /* UserViewModel.swift */; };
 		EC492DAC29F283A1009B4375 /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = EC492DAB29F283A1009B4375 /* Constants.swift */; };
+		EC492DAE29F28857009B4375 /* users.json in Resources */ = {isa = PBXBuildFile; fileRef = EC492DAD29F28857009B4375 /* users.json */; };
+		EC492DB029F28955009B4375 /* Localservice.swift in Sources */ = {isa = PBXBuildFile; fileRef = EC492DAF29F28955009B4375 /* Localservice.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -24,9 +26,11 @@
 		EC43E3C229F18D6C00B49A49 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		EC43E3C529F18D6C00B49A49 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		EC43E3CD29F18D9300B49A49 /* User.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = User.swift; sourceTree = "<group>"; };
-		EC492DA429F27745009B4375 /* Networking.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Networking.swift; sourceTree = "<group>"; };
+		EC492DA429F27745009B4375 /* Webservice.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Webservice.swift; sourceTree = "<group>"; };
 		EC492DA829F2815B009B4375 /* UserViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserViewModel.swift; sourceTree = "<group>"; };
 		EC492DAB29F283A1009B4375 /* Constants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
+		EC492DAD29F28857009B4375 /* users.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = users.json; sourceTree = "<group>"; };
+		EC492DAF29F28955009B4375 /* Localservice.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Localservice.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -59,6 +63,7 @@
 		EC43E3BD29F18D6900B49A49 /* NetworkInterchangable */ = {
 			isa = PBXGroup;
 			children = (
+				EC492DAD29F28857009B4375 /* users.json */,
 				EC492DAA29F28397009B4375 /* Constants */,
 				EC492DA729F27753009B4375 /* ViewModel */,
 				EC492DA629F27748009B4375 /* View */,
@@ -90,7 +95,8 @@
 		EC492DA329F276E0009B4375 /* Service */ = {
 			isa = PBXGroup;
 			children = (
-				EC492DA429F27745009B4375 /* Networking.swift */,
+				EC492DA429F27745009B4375 /* Webservice.swift */,
+				EC492DAF29F28955009B4375 /* Localservice.swift */,
 			);
 			path = Service;
 			sourceTree = "<group>";
@@ -177,6 +183,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				EC492DAE29F28857009B4375 /* users.json in Resources */,
 				EC43E3C629F18D6C00B49A49 /* Preview Assets.xcassets in Resources */,
 				EC43E3C329F18D6C00B49A49 /* Assets.xcassets in Resources */,
 			);
@@ -189,11 +196,12 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				EC492DB029F28955009B4375 /* Localservice.swift in Sources */,
 				EC43E3C129F18D6900B49A49 /* ContentView.swift in Sources */,
 				EC43E3BF29F18D6900B49A49 /* NetworkInterchangableApp.swift in Sources */,
 				EC43E3CE29F18D9300B49A49 /* User.swift in Sources */,
 				EC492DA929F2815B009B4375 /* UserViewModel.swift in Sources */,
-				EC492DA529F27745009B4375 /* Networking.swift in Sources */,
+				EC492DA529F27745009B4375 /* Webservice.swift in Sources */,
 				EC492DAC29F283A1009B4375 /* Constants.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
