@@ -9,10 +9,10 @@ import SwiftUI
 
 struct ContentView: View {
     
-    @ObservedObject private var userListViewModel = UserListViewModel()
+    @ObservedObject private var userListViewModel: UserListViewModel
     
     init() {
-        self.userListViewModel = UserListViewModel()
+        self.userListViewModel = UserListViewModel(service: Webservice())
     }
     
     var body: some View {

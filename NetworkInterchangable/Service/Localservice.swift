@@ -7,7 +7,9 @@
 
 import Foundation
 
-class Localservice {
+class Localservice: NetworkService {
+    var type: String = "Localservice"
+    
     func downloadUsers(_ resources: String) async throws -> [User] {
         guard let path = Bundle.main.path(forResource: resources, ofType: "json") else {
             fatalError("Cannot find resource")

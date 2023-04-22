@@ -17,6 +17,7 @@
 		EC492DAC29F283A1009B4375 /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = EC492DAB29F283A1009B4375 /* Constants.swift */; };
 		EC492DAE29F28857009B4375 /* users.json in Resources */ = {isa = PBXBuildFile; fileRef = EC492DAD29F28857009B4375 /* users.json */; };
 		EC492DB029F28955009B4375 /* Localservice.swift in Sources */ = {isa = PBXBuildFile; fileRef = EC492DAF29F28955009B4375 /* Localservice.swift */; };
+		EC492DB229F28C51009B4375 /* NetworkServiceProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = EC492DB129F28C51009B4375 /* NetworkServiceProtocol.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -31,6 +32,7 @@
 		EC492DAB29F283A1009B4375 /* Constants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
 		EC492DAD29F28857009B4375 /* users.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = users.json; sourceTree = "<group>"; };
 		EC492DAF29F28955009B4375 /* Localservice.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Localservice.swift; sourceTree = "<group>"; };
+		EC492DB129F28C51009B4375 /* NetworkServiceProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkServiceProtocol.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -97,6 +99,7 @@
 			children = (
 				EC492DA429F27745009B4375 /* Webservice.swift */,
 				EC492DAF29F28955009B4375 /* Localservice.swift */,
+				EC492DB129F28C51009B4375 /* NetworkServiceProtocol.swift */,
 			);
 			path = Service;
 			sourceTree = "<group>";
@@ -200,6 +203,7 @@
 				EC43E3C129F18D6900B49A49 /* ContentView.swift in Sources */,
 				EC43E3BF29F18D6900B49A49 /* NetworkInterchangableApp.swift in Sources */,
 				EC43E3CE29F18D9300B49A49 /* User.swift in Sources */,
+				EC492DB229F28C51009B4375 /* NetworkServiceProtocol.swift in Sources */,
 				EC492DA929F2815B009B4375 /* UserViewModel.swift in Sources */,
 				EC492DA529F27745009B4375 /* Webservice.swift in Sources */,
 				EC492DAC29F283A1009B4375 /* Constants.swift in Sources */,
